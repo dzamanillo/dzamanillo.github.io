@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --primarty-color: #26364e;
+  --secondary-color: #92cccd;
+  --third-color: #455876;
+  --forth-color: #31343d;
+}
+
+h3 {
+  text-align: right;
+  color: var(--primarty-color);
+  font-size: 55px;
+  border-right: 4px solid var(--primarty-color);
+  padding-right: 5px;
+}
+
+.sidebar {
+  width: 15%;
+}
+
+.content {
+  margin: 10px auto;
+  max-width: 70%;
+}
+
+.about-me,
+.work,
+.contact-me {
+  display: flex;
+}
+
+/* Header Styling */
+header {
+  background-color: var(--forth-color);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.titleBG h1 {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 10px;
+}
+
+.titleBG {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  margin: 10px 5px 10px 0;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 10px 15px;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Hero Styling */
+.hero {
+  background-image: url(./Images/pexels-matt-hardy-3560168.jpg);
+  background-size: cover;
+  height: 300px;
+  position: relative;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+}
+
+.hero h2 {
+  background-color: var(--secondary-color);
+  display: inline;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  padding: 5px 10px;
+}
+
+/* About Me Styling */
+
+/* Work Styling */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .container img {
+  height: 200px;
+  border: 5px solid var(--secondary-color);
+  width: 40%;
+  margin: 10px;
+  display: inline;
+}
+
+#larger-img {
+  height: 400px;
+  width: 83%;
+  display: block;
+}
+
+/* Contact Me Styling */
+
+.contact-me-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-me-container p,
+a {
+  font-size: 20px;
+  color: var(--primarty-color);
+  text-decoration: none;
+  border-bottom: 4px solid var(--primarty-color);
+}
