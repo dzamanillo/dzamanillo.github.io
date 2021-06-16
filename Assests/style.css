@@ -12,6 +12,12 @@
   --forth-color: #31343d;
 }
 
+body {
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1473px;
+}
+
 h3 {
   text-align: right;
   color: var(--primarty-color);
@@ -42,16 +48,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100vw;
+  max-width: 1473px;
 }
 
-.titleBG h1 {
+h1 {
   display: inline-block;
   padding-left: 50px;
   padding-right: 10px;
-}
-
-.titleBG {
-  display: inline-block;
   background-color: var(--secondary-color);
   margin: 10px 5px 10px 0;
 }
@@ -79,11 +83,10 @@ nav ul li a {
 .hero {
   background-image: url(./Images/pexels-matt-hardy-3560168.jpg);
   background-size: cover;
+  width: 100vw;
   height: 300px;
   position: relative;
-  background-position-x: center;
-  background-position-y: center;
-  background-attachment: fixed;
+  max-width: 1473px;
 }
 
 .hero h2 {
@@ -117,12 +120,28 @@ nav ul li a {
   height: 325px;
   width: 670px;
   background-size: cover;
+  position: relative;
+}
+
+h4 {
+  position: absolute;
+  bottom: 30px;
+  font-size: 30px;
+  background-color: var(--primarty-color);
+  color: #92cccd;
+  padding: 10px 5px 10px 15px;
+}
+
+.right {
+  padding: 10px 15px 10px 5px;
+  right: 0px;
 }
 
 .work-reg {
   height: 175px;
   width: 325px;
   background-size: cover;
+  position: relative;
 }
 
 .work1 {
@@ -178,20 +197,12 @@ nav ul li a {
 }
 
 @media screen and (max-width: 1024px) {
-  body {
-    width: 1024px;
-  }
-
   h3 {
     font-size: 44px;
   }
 }
 
 @media screen and (max-width: 375px) {
-  body {
-    width: 375px;
-  }
-
   header nav ul {
     margin: 0 auto;
   }
@@ -235,19 +246,5 @@ nav ul li a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
-
-  .work .container img {
-    height: 100px;
-    border: 5px solid var(--secondary-color);
-    width: 100%;
-    margin-bottom: 10px;
-    display: inline;
-  }
-
-  #larger-img {
-    height: 100px;
-    width: 100%;
-    display: block;
   }
 }
