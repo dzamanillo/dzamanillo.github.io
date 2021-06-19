@@ -81,7 +81,7 @@ nav ul li a {
   color: var(--secondary-color);
   text-decoration: none;
   border-bottom: 3px solid var(--secondary-color);
-  transition: color 0.5s;
+  transition: color 0.25s;
 }
 
 .listWrapper {
@@ -97,7 +97,7 @@ nav ul li a:hover {
   background-image: url(./Images/pexels-matt-hardy-3560168.jpg);
   background-size: cover;
   width: 100vw;
-  height: 300px;
+  height: 200px;
   position: relative;
   max-width: 1473px;
 }
@@ -189,11 +189,12 @@ h4 {
   height: 100%;
   width: 100%;
   background-color: var(--secondary-color);
-  opacity: 0;
+  opacity: 0.45;
+  transition: opacity ease-in 0.25s;
 }
 
 .hover-item:hover {
-  opacity: 0.45;
+  opacity: 0;
 }
 
 .link-item {
