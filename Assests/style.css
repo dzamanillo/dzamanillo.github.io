@@ -232,7 +232,11 @@ h4 {
   border-bottom: 4px solid var(--primarty-color);
 }
 
-@media screen and (max-width: 631px) {
+.contact-me-container > *:hover {
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+@media screen and (max-width: 643px) {
   /* Header MQ */
   header {
     flex-direction: column;
@@ -240,18 +244,33 @@ h4 {
   }
 
   h1 {
-    padding: 5px auto;
+    padding-inline: 0px;
     text-align: center;
     margin: 0px 0px 10px 0;
+    width: 100vw;
   }
 
-  header nav {
-    /* margin: auto 10px; */
+  h3 {
+    border-right: none;
+    border-bottom: 4px solid var(--primarty-color);
+    text-align: center;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100vw;
+    font-size: 5vw;
+  }
+
+  .about-me,
+  .work,
+  .contact-me {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   header nav ul {
     flex-direction: column;
-
+    width: 100vw;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -274,9 +293,8 @@ h4 {
 
   .subtitle {
     position: initial;
-    /* bottom: 10px;
-    right: 50px; */
-    padding: 5px 10px;
+    width: 100vw;
+    padding: 5px;
     background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
@@ -286,7 +304,7 @@ h4 {
 
   .hero h2 {
     display: inline;
-    margin-left: 0.1em;
+    margin-left: 0;
   }
 
   .subtitle img {
@@ -307,6 +325,7 @@ h4 {
   .work-reg,
   .larger-work {
     height: 18%;
+    min-height: 125px;
     width: 60vw;
   }
 
@@ -328,6 +347,6 @@ h4 {
 
   .contact-me-container p,
   .contact-me-container a {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 }
