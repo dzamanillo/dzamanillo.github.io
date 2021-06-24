@@ -25,8 +25,8 @@ h3 {
   color: var(--primarty-color);
   font-size: 3vw;
   border-right: 4px solid var(--primarty-color);
-  /* padding-right: 7px;
-  margin-right: 5px; */
+  padding-right: 7px;
+  margin-right: 5px;
   max-width: 217px;
 }
 
