@@ -16,8 +16,7 @@
 body {
 	margin: 0 auto;
 
-	/* max-width: 1473px; */
-	max-width: 1600px;
+	max-width: 1473px;
 }
 
 h3 {
@@ -27,12 +26,12 @@ h3 {
 	border-right: 4px solid var(--primarty-color);
 	padding-right: 7px;
 	margin-right: 5px;
-	max-width: 217px;
 }
 
-h5 {
-	font-size: 2rem;
-	margin-bottom: 1rem;
+@media screen and (min-width: 1400px) {
+	h3 {
+		font-size: 36px;
+	}
 }
 
 .sidebar {
@@ -51,37 +50,9 @@ h5 {
 	display: flex;
 }
 
-/* Header Styling */
-header {
-	background-color: var(--forth-color);
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 100vw;
-	/* max-width: 1473px; */
-	max-width: 1600px;
-}
-
-h1 {
-	display: inline-block;
-	padding-left: 50px;
-	padding-right: 10px;
-	background-color: var(--secondary-color);
-	margin: 10px 5px 10px 0;
-}
-
-header nav {
-	margin: auto 10px;
-}
-
-header nav ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	list-style: none;
-	margin-right: 30px;
+/* Nav Styling */
+nav {
+	background-color: var(--primarty-color);
 }
 
 nav ul li a {
@@ -93,10 +64,6 @@ nav ul li a {
 	transition: color 0.25s;
 }
 
-nav ul li a:hover {
-	color: white;
-}
-
 /* Hero Styling */
 .hero {
 	background-image: url(./Images/pexels-matt-hardy-3560168.jpg);
@@ -104,8 +71,7 @@ nav ul li a:hover {
 	width: 100vw;
 	height: 200px;
 	position: relative;
-	/* max-width: 1473px; */
-	max-width: 1600px;
+	max-width: 1473px;
 }
 
 .subtitle {
@@ -136,8 +102,20 @@ nav ul li a:hover {
 }
 
 /* Work Styling */
-.work {
-	height: 750px;
+
+.btn {
+	background-color: var(--primarty-color);
+	color: white;
+}
+
+.card-space {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-img-top {
+	height: 10rem;
 }
 
 .container {
@@ -147,76 +125,6 @@ nav ul li a:hover {
 	align-items: center;
 	align-content: start;
 	height: auto;
-}
-
-.larger-work,
-.work-reg {
-	border: 5px solid var(--secondary-color);
-	margin: 5px;
-}
-
-.larger-work {
-	background-image: url(./Images/run-buddy.png);
-	height: 55%;
-	max-height: 400px;
-	width: 78vw;
-	background-size: cover;
-	position: relative;
-}
-
-h4 {
-	position: absolute;
-	bottom: 30px;
-
-	font-size: 30px;
-	background-color: var(--primarty-color);
-	color: #92cccd;
-	padding: 10px 5px 10px 15px;
-}
-
-.right {
-	padding: 10px 15px 10px 5px;
-	right: 0px;
-}
-
-.work-reg {
-	height: 21%;
-	width: 48%;
-	background-size: cover;
-	position: relative;
-}
-
-.work1 {
-	background-image: url(./Images/Horsion.png);
-}
-
-.work2 {
-	background-image: url(./Images/code-quiz.png);
-}
-
-.work3 {
-	background-image: url(./Images/daily-planner.png);
-}
-
-.work4 {
-	background-image: url(./Images/password-gen.png);
-}
-
-.hover-item {
-	height: 100%;
-	width: 100%;
-	background-color: var(--secondary-color);
-	opacity: 0.45;
-	transition: opacity ease-in 0.25s;
-}
-
-.hover-item:hover {
-	opacity: 0;
-}
-
-.link-item {
-	width: 100%;
-	height: 100%;
 }
 
 /* Contact Me Styling */
@@ -229,7 +137,8 @@ h4 {
 	width: 83%;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
+	margin: auto;
 }
 
 .contact-me-container > * {
@@ -241,14 +150,6 @@ h4 {
 
 .contact-me-container > *:hover {
 	border-bottom: 4px solid var(--secondary-color);
-}
-
-/* /////////Media Queries//////////////// */
-
-@media screen and (min-width: 1600px) {
-	h3 {
-		font-size: 50px;
-	}
 }
 
 @media screen and (max-width: 643px) {
@@ -274,7 +175,6 @@ h4 {
 		padding-right: 0px;
 		width: 100vw;
 		font-size: 5vw;
-		max-width: none;
 	}
 
 	.about-me,
@@ -282,11 +182,6 @@ h4 {
 	.contact-me {
 		flex-direction: column;
 		align-items: flex-start;
-		justify-items: center;
-	}
-
-	header nav {
-		margin-bottom: 7px;
 	}
 
 	header nav ul {
@@ -304,10 +199,6 @@ h4 {
 		padding: 0px 0px;
 		color: var(--secondary-color);
 		border-bottom: none;
-	}
-
-	p {
-		text-align: center;
 	}
 
 	/* HERO MQ */
@@ -368,6 +259,7 @@ h4 {
 
 	.contact-me-container {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.contact-me-container p,

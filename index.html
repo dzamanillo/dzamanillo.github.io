@@ -5,39 +5,69 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Daniel Zamanillo</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="./Assests/style.css" />
 	</head>
 	<body>
 		<!-- Header and Nav -->
-		<header>
-			<h1>Daniel Zamanillo</h1>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand text-light" href="#">Daniel Zamanillo</a>
 
-			<nav>
-				<ul>
-					<li><a href="#about-me">About Me</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#contact-me">Contact Me</a></li>
-					<li><a href="./resume.html">Resume</a></li>
-				</ul>
-			</nav>
-		</header>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#work">Work</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#contact-me">Contact Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light" href="#">Resume</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
 		<!-- Hero -->
-		<section class="hero">
+		<div class="hero">
 			<div class="subtitle">
 				<img src="./Assests/Images/Cropped.jpeg" alt="Daniel Zamanillo" />
 				<h2>Nice to meet you!</h2>
 			</div>
-		</section>
+		</div>
 
 		<main>
 			<!-- About Me -->
-			<section id="about-me" class="about-me">
+			<section id="about-me" class="about-me container-fluid">
 				<div class="sidebar">
 					<h3>About Me</h3>
 				</div>
 				<div class="content">
-					<h5>Adapt. Optimize. Grow.</h5>
+					<h5 class="display-6">Adapt. Optimize. Grow.</h5>
 					<p id="about-me-p">
 						I am a web developer focused on helping people do just that. My
 						mission to prioritize these values has made an impact on me both
@@ -52,75 +82,230 @@
 			</section>
 
 			<!-- Work -->
-			<section id="work" class="work">
+			<section id="work" class="work container-fluid">
 				<div class="sidebar">
 					<h3>Work</h3>
 				</div>
-				<div class="container content">
-					<!-- Larger Work -->
-					<div class="larger-work">
-						<h4>Run Buddy</h4>
-
-						<div class="hover-item">
-							<a href="https://dzamanillo.github.io/run-buddy/" target="_blank">
-								<div class="link-item"></div>
-							</a>
+				<div class="container d-flex align-items-stretch">
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/WD-screenshot.png"
+							class="card-img-top"
+							alt="weather-dashboard"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Weather Dashboard</h5>
+							<p class="card-text">
+								Front End Project With a Focus on Using 3rd Party API's
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Bootstrap</li>
+								<li>jQuery</li>
+								<li>Moment JS</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://dzamanillo.github.io/weather-dashboard-dz/"
+									target="_blank"
+									class="btn"
+									>Website</a
+								>
+								<a
+									href="https://github.com/dzamanillo/weather-dashboard-dz"
+									target="_blank"
+									class="btn"
+									>Github</a
+								>
+							</div>
 						</div>
 					</div>
-
-					<!-- Horiseon -->
-					<div class="work-reg work1">
-						<h4>Horiseon</h4>
-						<div class="hover-item">
-							<a
-								href="https://dzamanillo.github.io/urban-octo-telegram-dz/"
-								target="_blank"
-							>
-								<div class="link-item"></div>
-							</a>
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/PTBB-screenShot.png"
+							class="card-img-top"
+							alt="periodic table of breaking bad"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Periodic Table of Breaking Bad</h5>
+							<p class="card-text">
+								Front End Group Project With Focus on Working with 3rd Party
+								API's and Managing a Project on GitHub
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Bootstrap</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://dzamanillo.github.io/sturdy-broccoli/"
+									class="btn"
+									target="_blank"
+									>Website</a
+								>
+								<a
+									href="https://github.com/dzamanillo/sturdy-broccoli"
+									class="btn"
+									target="_blank"
+									>Github</a
+								>
+							</div>
 						</div>
 					</div>
-
-					<!-- Coding Quiz -->
-					<div class="work-reg work2">
-						<h4 class="right">Coding Quiz</h4>
-						<div class="hover-item">
-							<a href="https://dzamanillo.github.io/code-quiz/" target="_blank">
-								<div class="link-item"></div>
-							</a>
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/PWG-screenshot.png"
+							class="card-img-top"
+							alt="password generator"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Password Generator</h5>
+							<p class="card-text">
+								Front End Project With Focus on Various Array Methods
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://dzamanillo.github.io/password-gen/"
+									class="btn"
+									target="_blank"
+									>Website</a
+								>
+								<a
+									href="https://github.com/dzamanillo/password-gen"
+									class="btn"
+									target="_blank"
+									>Github</a
+								>
+							</div>
 						</div>
 					</div>
-
-					<!-- Work Scheduler -->
-					<div class="work-reg work3">
-						<h4>Scheduler</h4>
-						<div class="hover-item">
-							<a
-								href="https://dzamanillo.github.io/daily-planner/"
-								target="_blank"
-							>
-								<div class="link-item"></div>
-							</a>
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/planner-screenShot.png"
+							class="card-img-top"
+							alt="daily-planner"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Daily Planner</h5>
+							<p class="card-text">
+								Front End Project With a Focus on Utilizing Local Storage
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Bootstrap</li>
+								<li>jQuery</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://dzamanillo.github.io/daily-planner/"
+									class="btn"
+									target="_blank"
+									>Website</a
+								>
+								<a
+									href="https://github.com/dzamanillo/daily-planner"
+									class="btn"
+									target="_blank"
+									>Github</a
+								>
+							</div>
 						</div>
 					</div>
-
-					<!-- Pass Gen -->
-					<div class="work-reg work4">
-						<h4 class="right">Password Generator</h4>
-						<div class="hover-item">
-							<a
-								href="https://dzamanillo.github.io/password-gen/"
-								target="_blank"
-							>
-								<div class="link-item"></div>
-							</a>
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/TK-screenShot.png"
+							class="card-img-top"
+							alt="team-keeper"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Team Keeper</h5>
+							<p class="card-text">
+								Back End Project With a Focus on Creating a Command Line
+								Application and Test Driven Development
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Bootstrap</li>
+								<li>Node JS</li>
+								<li>Inquirer</li>
+								<li>Jest</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://drive.google.com/file/d/1NAYgQpJ0YRoCh208MSzjdozmAr7JWbkK/view"
+									class="btn"
+									target="_blank"
+									>Video</a
+								>
+								<a
+									href="https://github.com/dzamanillo/team-keeper"
+									class="btn"
+									target="_blank"
+									>Github</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="card m-2" style="width: 18rem">
+						<img
+							src="/Assests/Images/zk-screenshot.png"
+							class="card-img-top"
+							alt="zookeeper"
+						/>
+						<div class="card-body card-space">
+							<h5 class="card-title">Zookeeper</h5>
+							<p class="card-text">
+								Full Stack Project With a Focus on Creating API and User Input
+							</p>
+							<p>Built With:</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Bootstrap</li>
+								<li>Node JS</li>
+								<li>Express JS</li>
+								<li>Jest</li>
+							</ul>
+							<div class="d-flex justify-content-between">
+								<a
+									href="https://hidden-ravine-86862.herokuapp.com/"
+									class="btn"
+									target="_blank"
+									>Website</a
+								>
+								<a
+									href="https://github.com/dzamanillo/zookeeper/tree/main"
+									class="btn"
+									target="_blank"
+									>Github</a
+								>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Contact Me -->
-			<section id="contact-me" class="contact-me">
+			<section id="contact-me" class="contact-me container-fluid">
 				<div class="sidebar">
 					<h3>Contact Me</h3>
 				</div>
@@ -136,5 +321,10 @@
 				</div>
 			</section>
 		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
