@@ -99,6 +99,11 @@ nav ul li a {
 
 /* Work Styling */
 
+.btn {
+	background-color: var(--primarty-color);
+	color: white;
+}
+
 .card-space {
 	display: flex;
 	flex-direction: column;
@@ -116,76 +121,6 @@ nav ul li a {
 	align-items: center;
 	align-content: start;
 	height: auto;
-}
-
-.larger-work,
-.work-reg {
-	border: 5px solid var(--secondary-color);
-	margin: 5px;
-}
-
-.larger-work {
-	background-image: url(./Images/run-buddy.png);
-	height: 55%;
-	max-height: 400px;
-	width: 78vw;
-	background-size: cover;
-	position: relative;
-}
-
-h4 {
-	position: absolute;
-	bottom: 30px;
-
-	font-size: 30px;
-	background-color: var(--primarty-color);
-	color: #92cccd;
-	padding: 10px 5px 10px 15px;
-}
-
-.right {
-	padding: 10px 15px 10px 5px;
-	right: 0px;
-}
-
-.work-reg {
-	height: 21%;
-	width: 48%;
-	background-size: cover;
-	position: relative;
-}
-
-.work1 {
-	background-image: url(./Images/Horsion.png);
-}
-
-.work2 {
-	background-image: url(./Images/parks.png);
-}
-
-.work3 {
-	background-image: url(./Images/abelton.png);
-}
-
-.work4 {
-	background-image: url(./Images/opry.png);
-}
-
-.hover-item {
-	height: 100%;
-	width: 100%;
-	background-color: var(--secondary-color);
-	opacity: 0.45;
-	transition: opacity ease-in 0.25s;
-}
-
-.hover-item:hover {
-	opacity: 0;
-}
-
-.link-item {
-	width: 100%;
-	height: 100%;
 }
 
 /* Contact Me Styling */
