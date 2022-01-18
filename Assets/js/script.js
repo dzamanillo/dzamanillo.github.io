@@ -15,8 +15,8 @@ const projects = [
 			"JWT",
 		],
 		image: "Assets/Images/HCC_screenShot.png",
-		deployUrl: "https://holiday-chaos-coordinator.herokuapp.com/",
-		gitHubUrl: "https://github.com/katharinechumble/musical-telegram",
+		deployUrl: "https://holiday-chaos-dz.herokuapp.com/",
+		gitHubUrl: "https://github.com/dzamanillo/target-shopping",
 	},
 	{
 		name: "Deep Thoughts",
